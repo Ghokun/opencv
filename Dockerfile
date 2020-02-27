@@ -44,10 +44,10 @@ RUN mkdir build \
  	        -D WITH_V4L=ON \
  	        -D WITH_OPENGL=ON \
  	        -D BUILD_EXAMPLES=OFF \
-    	     -D INSTALL_C_EXAMPLES=OFF \
-    	     -D INSTALL_PYTHON_EXAMPLES=OFF \
-    	     -D BUILD_TESTS=OFF \
-    	     -D BUILD_PERF_TESTS=OFF \
+          -D INSTALL_C_EXAMPLES=OFF \
+          -D INSTALL_PYTHON_EXAMPLES=OFF \
+          -D BUILD_TESTS=OFF \
+          -D BUILD_PERF_TESTS=OFF \
  	        -D OPENCV_ENABLE_NONFREE=ON \
  	        -D OPENCV_EXTRA_MODULES_PATH=/opt/opencv_contrib/modules \
  	        .. \
