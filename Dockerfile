@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 LABEL maintainer="ghokun.github.io"
 
-RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ yakkety universe" | tee -a /etc/apt/sources.list \
+RUN add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main" \
  && DEBIAN_FRONTEND=noninteractive apt-get update \
  && apt-get install -qq -y --no-install-recommends \
                 build-essential \
