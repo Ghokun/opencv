@@ -1,7 +1,8 @@
 FROM ubuntu:18.04
 LABEL maintainer="ghokun.github.io"
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update \
+RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ yakkety universe" | sudo tee -a /etc/apt/sources.list \
+ && DEBIAN_FRONTEND=noninteractive apt-get update \
  && apt-get install -qq -y --no-install-recommends \
                 build-essential \
                 cmake \
