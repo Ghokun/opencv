@@ -57,4 +57,5 @@ RUN mkdir build \
  && rm -rf /opt/opencv \
  && rm -rf /opt/opencv_contrib
 
+WORKDIR /opt
 CMD ["/bin/bash"]
