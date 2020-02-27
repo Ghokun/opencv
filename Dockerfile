@@ -50,7 +50,7 @@ RUN mkdir build \
           -D BUILD_PERF_TESTS=OFF \
           -D OPENCV_ENABLE_NONFREE=ON \
           -D OPENCV_EXTRA_MODULES_PATH=/opt/opencv_contrib/modules \
- 	        .. \
+          .. \
  && make -j$(nproc) \
  && make install \
  && ldconfig \
