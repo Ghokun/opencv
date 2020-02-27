@@ -10,7 +10,7 @@ int main() {
          << CV_MINOR_VERSION
          << "."
          << CV_SUBMINOR_VERSION
-         << ")
+         << ")"
          << endl;
     return 0;
 }	 
