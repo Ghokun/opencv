@@ -1,25 +1,28 @@
 FROM ubuntu:18.04
 LABEL maintainer="ghokun.github.io"
 
-RUN add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main" \
- && DEBIAN_FRONTEND=noninteractive apt-get update \
+RUN DEBIAN_FRONTEND=noninteractive apt-get update \
  && apt-get install -qq -y --no-install-recommends \
                 build-essential \
                 cmake \
                 git \
                 ca-certificates \
-                libgtk2.0-dev \
+                libgtk-3-dev \
                 pkg-config \
                 libavcodec-dev \
                 libavformat-dev \
                 libswscale-dev \
+                libv4l-dev \
+                libxvidcore-dev \
+                libx264-dev \
                 libtbb2 \
                 libtbb-dev \
                 libjpeg-dev \
                 libpng-dev \
                 libtiff-dev \
-                libjasper-dev \
                 libdc1394-22-dev \
+                libatlas-base-dev \
+                gfortran \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /tmp/*
  
