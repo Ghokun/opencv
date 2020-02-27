@@ -1,12 +1,16 @@
 #include <iostream>
-#include "nlopt.hpp"
+#include <opencv2/opencv.hpp>
 using namespace std;
+using namespace cv;
 int main() {
-    cout << nlopt::version_major()
+    cout << CV_VERSION
+         << "("
+         << CV_MAJOR_VERSION
          << "."
-         << nlopt::version_minor()
+         << CV_MINOR_VERSION
          << "."
-         << nlopt::version_bugfix()
+         << CV_SUBMINOR_VERSION
+         << ")
          << endl;
     return 0;
-}
+}	 
