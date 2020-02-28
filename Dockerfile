@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ghokun/nlopt:latest
 LABEL maintainer="ghokun.github.io"
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update \
