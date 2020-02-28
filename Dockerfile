@@ -37,7 +37,7 @@ RUN mkdir build \
           -D CMAKE_INSTALL_PREFIX=/usr/local/ \
           -D BUILD_opencv_legacy=ON \
           -D BUILD_TIFF=ON \
-          -D ENABLE_AVX=ON \
+          -D CPU_BASELINE=SSE4_2 \
           -D WITH_OPENCL=ON \
           -D WITH_IPP=ON \
           -D WITH_TBB=ON \
