@@ -35,7 +35,7 @@ RUN mkdir build \
  && cd build \
  && cmake -D CMAKE_BUILD_TYPE=RELEASE \
           -D CMAKE_INSTALL_PREFIX=/usr/local/ \
-          -D BUILD_opencv_legacy=OFF \
+          -D BUILD_opencv_legacy=ON \
           -D BUILD_TIFF=ON \
           -D ENABLE_AVX=ON \
           -D WITH_OPENCL=ON \
