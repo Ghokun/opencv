@@ -7,8 +7,19 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
                 cmake \
                 git \
                 ca-certificates \
-                libgtk-3-dev \
                 pkg-config \
+                openssh-client \
+                libxtst-dev \
+                libxext-dev \
+                libxrender-dev \
+                libfreetype6-dev \
+                libfontconfig1 \
+                libgtk-3-dev \
+                qt5-default \
+                libxslt1.1 \
+                libxxf86vm1 \
+                mesa-utils \
+                mesa-utils-extra \
                 libavcodec-dev \
                 libavformat-dev \
                 libswscale-dev \
@@ -35,14 +46,13 @@ RUN mkdir build \
  && cd build \
  && cmake -D CMAKE_BUILD_TYPE=RELEASE \
           -D CMAKE_INSTALL_PREFIX=/usr/local/ \
-          -D BUILD_opencv_legacy=ON \
-          -D BUILD_TIFF=ON \
-          -D CPU_BASELINE=SSE4_2 \
+          -D CPU_BASELINE=SSE4_2 \ 
           -D WITH_OPENCL=ON \
           -D WITH_IPP=ON \
           -D WITH_TBB=ON \
           -D WITH_V4L=ON \
           -D WITH_OPENGL=ON \
+          -D WITH_QT=ON \
           -D BUILD_EXAMPLES=OFF \
           -D INSTALL_C_EXAMPLES=OFF \
           -D INSTALL_PYTHON_EXAMPLES=OFF \
